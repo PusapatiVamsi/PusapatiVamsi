@@ -1,3 +1,9 @@
+<div align="center">
+
+<img src="./profile.svg" width="100%">
+
+</div>
+
 # 👋 Hi, I'm Vamsi Pusapati
 
 ### Senior Full Stack Developer
