@@ -1,0 +1,339 @@
+<svg width="1000" height="500" viewBox="0 0 1000 500"
+xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#050816"/>
+    <stop offset="50%" stop-color="#07152b"/>
+    <stop offset="100%" stop-color="#020617"/>
+  </linearGradient>
+
+  <linearGradient id="border" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#6d28d9"/>
+    <stop offset="50%" stop-color="#00bfff"/>
+    <stop offset="100%" stop-color="#06b6d4"/>
+  </linearGradient>
+
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+</defs>
+
+
+<!-- Main terminal -->
+
+<rect x="5" y="5"
+      width="990"
+      height="490"
+      rx="20"
+      fill="url(#bg)"
+      stroke="url(#border)"
+      stroke-width="2"/>
+
+
+<!-- Terminal header -->
+
+<circle cx="25" cy="28" r="5" fill="#ef4444"/>
+<circle cx="42" cy="28" r="5" fill="#f59e0b"/>
+<circle cx="59" cy="28" r="5" fill="#22c55e"/>
+
+<text x="500" y="32"
+      text-anchor="middle"
+      fill="#64748b"
+      font-family="monospace"
+      font-size="13">
+vamsi@developer:~$ ./profile.sh --live
+</text>
+
+
+<!-- Left panel -->
+
+<rect x="25" y="55"
+      width="380"
+      height="400"
+      rx="14"
+      fill="#06101f"
+      stroke="#0ea5e9"
+      stroke-opacity="0.5"/>
+
+<text x="45" y="80"
+      fill="#00d9ff"
+      font-family="monospace"
+      font-size="12">
+VISUAL.MAP
+</text>
+
+
+<!-- Simple developer ASCII -->
+
+<text x="70" y="135"
+      fill="#0ea5e9"
+      font-family="monospace"
+      font-size="10">
+        .::::::::::::.
+</text>
+
+<text x="70" y="148"
+      fill="#0ea5e9"
+      font-family="monospace"
+      font-size="10">
+      .::::::::::::::::.
+</text>
+
+<text x="70" y="161"
+      fill="#0ea5e9"
+      font-family="monospace"
+      font-size="10">
+     ::::::::::::::::::::
+</text>
+
+<text x="70" y="174"
+      fill="#0ea5e9"
+      font-family="monospace"
+      font-size="10">
+    ::::::: VAMSI :::::::
+</text>
+
+<text x="70" y="187"
+      fill="#0ea5e9"
+      font-family="monospace"
+      font-size="10">
+     ::::::::::::::::::::
+</text>
+
+<text x="70" y="200"
+      fill="#0ea5e9"
+      font-family="monospace"
+      font-size="10">
+      ::::::::::::::::::
+</text>
+
+<text x="70" y="213"
+      fill="#0ea5e9"
+      font-family="monospace"
+      font-size="10">
+        ::::::::::::::
+</text>
+
+<text x="70" y="226"
+      fill="#0ea5e9"
+      font-family="monospace"
+      font-size="10">
+          ::::::::
+</text>
+
+
+<line x1="25" y1="330"
+      x2="405" y2="330"
+      stroke="#0ea5e9"
+      stroke-opacity="0.35"/>
+
+<text x="45" y="355"
+      fill="#22d3ee"
+      font-family="monospace"
+      font-size="12">
+SYSTEM.STATUS
+</text>
+
+<text x="45" y="380"
+      fill="#94a3b8"
+      font-family="monospace"
+      font-size="12">
+● ONLINE
+</text>
+
+<text x="45" y="402"
+      fill="#94a3b8"
+      font-family="monospace"
+      font-size="12">
+● BUILDING
+</text>
+
+<text x="45" y="424"
+      fill="#94a3b8"
+      font-family="monospace"
+      font-size="12">
+● LEARNING
+</text>
+
+
+<!-- Right panel -->
+
+<rect x="425" y="55"
+      width="550"
+      height="400"
+      rx="14"
+      fill="#06101f"
+      stroke="#0ea5e9"
+      stroke-opacity="0.5"/>
+
+<text x="445" y="80"
+      fill="#00d9ff"
+      font-family="monospace"
+      font-size="12">
+SYSTEM.INFO
+</text>
+
+
+<text x="445" y="120"
+      fill="#22d3ee"
+      font-family="monospace"
+      font-size="13">
+Name
+</text>
+
+<text x="680" y="120"
+      fill="#e2e8f0"
+      font-family="monospace"
+      font-size="13">
+Vamsi Pusapati
+</text>
+
+
+<text x="445" y="148"
+      fill="#22d3ee"
+      font-family="monospace"
+      font-size="13">
+Role
+</text>
+
+<text x="680" y="148"
+      fill="#e2e8f0"
+      font-family="monospace"
+      font-size="13">
+Senior Full Stack Developer
+</text>
+
+
+<text x="445" y="176"
+      fill="#22d3ee"
+      font-family="monospace"
+      font-size="13">
+Frontend
+</text>
+
+<text x="680" y="176"
+      fill="#e2e8f0"
+      font-family="monospace"
+      font-size="13">
+React, JavaScript, HTML, CSS
+</text>
+
+
+<text x="445" y="204"
+      fill="#22d3ee"
+      font-family="monospace"
+      font-size="13">
+Backend
+</text>
+
+<text x="680" y="204"
+      fill="#e2e8f0"
+      font-family="monospace"
+      font-size="13">
+Java, Spring Boot, REST APIs
+</text>
+
+
+<text x="445" y="232"
+      fill="#22d3ee"
+      font-family="monospace"
+      font-size="13">
+Database
+</text>
+
+<text x="680" y="232"
+      fill="#e2e8f0"
+      font-family="monospace"
+      font-size="13">
+MySQL, PostgreSQL
+</text>
+
+
+<text x="445" y="260"
+      fill="#22d3ee"
+      font-family="monospace"
+      font-size="13">
+Tools
+</text>
+
+<text x="680" y="260"
+      fill="#e2e8f0"
+      font-family="monospace"
+      font-size="13">
+Git, GitHub, VS Code
+</text>
+
+
+<line x1="445" y1="290"
+      x2="950" y2="290"
+      stroke="#334155"/>
+
+
+<text x="445" y="318"
+      fill="#22c55e"
+      font-family="monospace"
+      font-size="12">
+CONTACT
+</text>
+
+
+<text x="445" y="345"
+      fill="#94a3b8"
+      font-family="monospace"
+      font-size="12">
+LinkedIn
+</text>
+
+<text x="680" y="345"
+      fill="#e2e8f0"
+      font-family="monospace"
+      font-size="12">
+linkedin.com/in/vamsipusapati56
+</text>
+
+
+<text x="445" y="372"
+      fill="#94a3b8"
+      font-family="monospace"
+      font-size="12">
+GitHub
+</text>
+
+<text x="680" y="372"
+      fill="#e2e8f0"
+      font-family="monospace"
+      font-size="12">
+github.com/PusapatiVamsi
+</text>
+
+
+<text x="445" y="399"
+      fill="#94a3b8"
+      font-family="monospace"
+      font-size="12">
+Website
+</text>
+
+<text x="680" y="399"
+      fill="#e2e8f0"
+      font-family="monospace"
+      font-size="12">
+zeminent.com
+</text>
+
+
+<text x="445" y="435"
+      fill="#22c55e"
+      font-family="monospace"
+      font-size="12">
+STATUS: BUILDING &amp; LEARNING
+</text>
+
+</svg>
