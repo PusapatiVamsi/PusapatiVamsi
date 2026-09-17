@@ -2,12 +2,67 @@
 xmlns="http://www.w3.org/2000/svg">
 
 <defs>
+  
+  <filter id="shadow3d"
+        x="-30%"
+        y="-30%"
+        width="160%"
+        height="160%">
+
+  <feDropShadow
+      dx="8"
+      dy="12"
+      stdDeviation="10"
+      flood-color="#000000"
+      flood-opacity="0.75"/>
+
+</filter>
+
+
+<filter id="neonGlow"
+        x="-30%"
+        y="-30%"
+        width="160%"
+        height="160%">
+
+  <feGaussianBlur
+      stdDeviation="6"
+      result="blur"/>
+
+  <feMerge>
+    <feMergeNode in="blur"/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+
+</filter>
+
+
+<linearGradient id="glass"
+                x1="0"
+                y1="0"
+                x2="0"
+                y2="1">
+
+  <stop offset="0%"
+        stop-color="#172554"
+        stop-opacity="0.85"/>
+
+  <stop offset="50%"
+        stop-color="#0f172a"
+        stop-opacity="0.65"/>
+
+  <stop offset="100%"
+        stop-color="#020617"
+        stop-opacity="0.9"/>
+
+</linearGradient>
 
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
     <stop offset="0%" stop-color="#050816"/>
     <stop offset="50%" stop-color="#07152b"/>
     <stop offset="100%" stop-color="#020617"/>
   </linearGradient>
+  
 
   <linearGradient id="border" x1="0" y1="0" x2="1" y2="1">
     <stop offset="0%" stop-color="#6d28d9"/>
@@ -32,8 +87,28 @@ xmlns="http://www.w3.org/2000/svg">
       width="990"
       height="490"
       rx="20"
-      fill="url(#bg)"
+      fill="url(#glass)"
       stroke="url(#border)"
+      stroke-width="3"
+      filter="url(#shadow3d)"/>
+
+  <rect x="8" y="8"
+      width="984"
+      height="484"
+      rx="18"
+      fill="none"
+      stroke="#38bdf8"
+      stroke-width="1"
+      opacity="0.5"
+      filter="url(#neonGlow)"/>
+
+  <path d="M25 25
+         Q25 15 35 15
+         L965 15
+         Q975 15 975 25"
+      fill="none"
+      stroke="#ffffff"
+      stroke-opacity="0.35"
       stroke-width="2"/>
 
 
@@ -45,7 +120,8 @@ xmlns="http://www.w3.org/2000/svg">
 
 <text x="500" y="32"
       text-anchor="middle"
-      fill="#64748b"
+      fill="#38bdf8"
+      filter="url(#neonGlow)"
       font-family="monospace"
       font-size="13">
 vamsi@developer:~$ ./profile.sh --live
@@ -58,9 +134,11 @@ vamsi@developer:~$ ./profile.sh --live
       width="380"
       height="400"
       rx="14"
-      fill="#06101f"
+      fill="url(#glass)"
       stroke="#0ea5e9"
-      stroke-opacity="0.5"/>
+      stroke-opacity="0.8"
+      stroke-width="2"
+      filter="url(#shadow3d)"/>
 
 <text x="45" y="80"
       fill="#00d9ff"
@@ -169,9 +247,11 @@ SYSTEM.STATUS
       width="550"
       height="400"
       rx="14"
-      fill="#06101f"
+      fill="url(#glass)"
       stroke="#0ea5e9"
-      stroke-opacity="0.5"/>
+      stroke-opacity="0.8"
+      stroke-width="2"
+      filter="url(#shadow3d)"/>
 
 <text x="445" y="80"
       fill="#00d9ff"
